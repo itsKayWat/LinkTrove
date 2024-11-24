@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QuickBookmark</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #E0E0E0;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        a {
+            color: #BB86FC;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #FFFFFF;
+        }
+        code {
+            background-color: #1E1E1E;
+            color: #C5C5C5;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        pre {
+            background-color: #1E1E1E;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        .content {
+            max-width: 800px;
+            margin: auto;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>QuickBookmark</h1>
+        <p>QuickBookmark is a Python-based command-line tool designed to help you manage and access your bookmarks effortlessly. Whether you're bookmarking URLs, file paths, or scripts, QuickBookmark provides a simple and efficient way to keep your important resources organized and easily accessible.</p>
+
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#why-quickbookmark">Why QuickBookmark?</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#installation">Installation</a></li>
+            <li><a href="#usage">Usage</a></li>
+            <li><a href="#requirements">Requirements</a></li>
+            <li><a href="#example-use-case">Example Use Case</a></li>
+            <li><a href="#contributing">Contributing</a></li>
+            <li><a href="#license">License</a></li>
+        </ul>
+
+        <h2 id="why-quickbookmark">Why QuickBookmark?</h2>
+        <p>Managing bookmarks manually can become cumbersome, especially when dealing with multiple types of resources like websites, documents, and scripts. QuickBookmark simplifies this process by providing a unified interface to add, remove, list, and load your bookmarks directly from the terminal.</p>
+
+        <h2 id="features">Features</h2>
+        <ul>
+            <li><strong>Add Bookmarks:</strong> Easily add new bookmarks with a unique identifier.</li>
+            <li><strong>Remove Bookmarks:</strong> Remove bookmarks that are no longer needed.</li>
+            <li><strong>List Bookmarks:</strong> View all your saved bookmarks in an organized manner.</li>
+            <li><strong>Load Bookmarks:</strong> Quickly access your bookmarks, whether they are URLs, file paths, or scripts.</li>
+            <li><strong>Persistent Storage:</strong> Bookmarks are saved in a JSON file for persistent storage across sessions.</li>
+        </ul>
+
+        <h2 id="installation">Installation</h2>
+        <h3>Clone the Repository:</h3>
+        <pre><code>git clone https://github.com/yourusername/QuickBookmark.git</code></pre>
+
+        <h3>Navigate to the Directory:</h3>
+        <pre><code>cd QuickBookmark</code></pre>
+
+        <h3>Install Required Packages:</h3>
+        <pre><code>pip install -r requirements.txt</code></pre>
+
+        <h2 id="usage">Usage</h2>
+        <p>Run the script using Python:</p>
+        <pre><code>python bookmarks.py</code></pre>
+
+        <p>Follow the on-screen menu to add, remove, list, or load bookmarks.</p>
+
+        <h3>Menu Options</h3>
+        <ul>
+            <li><strong>Add a Bookmark:</strong> Add a new bookmark by providing a unique number and the bookmark value (URL, file path, or script path).</li>
+            <li><strong>Remove a Bookmark:</strong> Remove an existing bookmark by entering its number.</li>
+            <li><strong>List Bookmarks:</strong> Display all saved bookmarks.</li>
+            <li><strong>Load a Bookmark:</strong> Access a bookmark by its number. Depending on the type, it will open in your default browser, execute a script, or open a file.</li>
+            <li><strong>Exit:</strong> Exit the QuickBookmark application.</li>
+        </ul>
+
+        <h2 id="requirements">Requirements</h2>
+        <p>Ensure you have Python installed. Install the required packages using the following commands:</p>
+        <pre><code>pip install -r requirements.txt</code></pre>
+
+        <h2 id="example-use-case">Example Use Case</h2>
+        <h3>Customer Situation:</h3>
+        <p>Imagine you're a developer who frequently accesses various resources like project documentation (PDFs), internal websites, and Python scripts for automation. Instead of searching through folders or bookmarks in a browser, QuickBookmark allows you to access all these resources directly from the terminal with simple commands.</p>
+
+        <h3>Steps:</h3>
+        <ol>
+            <li>
+                <strong>Add Bookmarks:</strong>
+                <pre><code>python bookmarks.py
+# Choose option 1 to add a bookmark
+# Enter a unique number, e.g., 1
+# Enter the bookmark value, e.g., https://github.com</code></pre>
+            </li>
+            <li>
+                <strong>List Bookmarks:</strong>
+                <pre><code>python bookmarks.py
+# Choose option 3 to list bookmarks</code></pre>
+            </li>
+            <li>
+                <strong>Load a Bookmark:</strong>
+                <pre><code>python bookmarks.py
+# Choose option 4 and enter the bookmark number, e.g., 1
+# The default browser will open GitHub</code></pre>
+            </li>
+        </ol>
+
+        <h2 id="contributing">Contributing</h2>
+        <p>Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.</p>
+
+        <h2 id="license">License</h2>
+        <p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for details.</p>
+    </div>
+</body>
+</html>
